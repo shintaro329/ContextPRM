@@ -62,7 +62,7 @@ accelerate config
 * Specify the number of GPUs you are using for multi-GPU training.
 * Set the precision to `bf16`.
 * Set gradient clipping to `1`.
-* **Important:** Ensure the total batch size equals **128**. You need to verify this based on your hardware: `Number of GPUs * gradient_accumulation_steps * per_device_batch_size = 128` (You can configure this in your config file, e.g., `train_configs/qwen_prm800k`).
+* **Important:** Ensure the total batch size equals **128**. You need to verify this based on your hardware: `Number of GPUs * gradient_accumulation_steps * per_device_batch_size = 128` (You can configure this in your config file, e.g., `train_configs/llama_prm800k`).
 
 We highly recommend using **DeepSpeed** for data-parallel model training, which can be easily set up during the `accelerate config` process.
 
