@@ -1,30 +1,28 @@
-ContextPRM: Leveraging Contextual Coherence for Multi-Domain Test-Time Scaling
+**ContextPRM: Leveraging Contextual Coherence for Multi-Domain Test-Time Scaling**
 
 <p align="center">
-<img width="800" alt="ContextPRM Performance Heatmap" src="./figures/miniheat.png" />
+<img src="./miniheat.jpg" width="49%" alt="ContextPRM Performance Heatmap" />
+<img src="./miniresult.jpg" width="49%" alt="ContextPRM Test-Time Scaling" />
 </p>
 
-<p align="center">
-<img width="600" alt="ContextPRM Test-Time Scaling" src="./figures/miniresult.png" />
-</p>
-ß
-🚀 Introduction
+<span style="font-size: 26px;"> 🚀 Introduction</span>
+    
 
 ContextPRM is a novel framework designed to leverage contextual coherence to train Process Reward Models (PRMs) that generalize beyond traditional mathematical tasks. While existing PRMs excel in math-adjacent domains, they often struggle in humanities and other text-rich subjects. By focusing on contextual coherence, ContextPRM enables effective multi-domain test-time scaling, significantly improving reasoning accuracy across diverse fields such as Law, Philosophy, Business, and Biology.
+<span style="font-size: 26px;"> 📢 News</span>
 
-📢 News
 
 🚧 [Work in Progress] We are currently in the process of releasing the initial training code and datasets. The repository is actively being updated.
+<span style="font-size: 26px;"> 📊 Results</span>
 
-📊 Results
 
 As shown in the figures above, ContextPRM significantly improves upon baseline methods:
 
 Broad Generalization: ContextPRM demonstrates substantial normalized accuracy improvements over the Majority Voting baseline across various domains, including Law (+10.35%), Philosophy (+9.39%), and Business (+8.72%).
 
 Test-Time Scaling: On Non-Math-Adjacent Domains, ContextPRM consistently scales with additional compute, reaching over 64% inference accuracy at 128 generated Chain-of-Thought (CoT) solutions, outperforming other state-of-the-art reward modeling approaches.
+<span style="font-size: 26px;"> 📖 How to Use</span>
 
-📖 How to Use
 
 Note: 🚧 Code and documentation are still being uploaded and refined. The following instructions cover the preliminary training setup. Full usage and inference instructions will be added soon. 🚧
 
@@ -66,8 +64,8 @@ Once configured, start the training script:
 
 ./run_training.sh
 
+<span style="font-size: 26px;"> ❤️ Acknowledgements</span>
 
-❤️ Acknowledgements
 
 We build our work upon the fantastic contributions from the open-source community. We would like to express our special gratitude to the authors and maintainers of VersaPRM. Our implementation has greatly benefited from their codebase:
 
